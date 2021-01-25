@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2? family = Poppins: ital, wght @ 0,100; 0,200; 0,300; 0,400; 0,700; 1,100; 1,200; 1,300 & display = swap">
+
+    <script src="https://kit.fontawesome.com/8a1c97083b.js" crossorigin="anonymous"></script>
+
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function verificar(){
+            let username = form.username;
+            let password = form.password;
+
+            if (username.value == "") {
+                swal("Ocorreu um erro","Campo de usuário não preenchido","error");
+            } else if (password.value == "") {
+                swal("Ocorreu um erro","Campo senha não preenchido","error");
+            } else {
+                swal("Perfeito","Seja bem vindo!","success");
+            }
+        }
+    </script>
+
+    <title>Tela de Login</title>
+</head>
+
+<body>
+    <main class="caixa">
+
+        <h2 class="entrada">Login</h2>
+
+        <form id="form-login" name="form">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Enter your Username">
+                <div class="underline"></div>
+            </div>
+
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <div class="underline"></div>
+            </div>
+
+            <input type="button" value="Acessar" onclick= 'verificar()'>
+
+        </form>
+
+        <div class="footer">
+            <span>Acesse atráves das suas redes sociais</span>
+            <div class="social-field">
+                <div class="twitter">
+                    <a href="https://twitter.com/login?lang=pt">
+                        <i class="fab fa-twitter"></i>
+                        Acessar com o Twitter
+                    </a>
+                </div>
+
+                <div class="facebook">
+                    <a href="https://pt-br.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                        Acessar com o Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
