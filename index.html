@@ -11,22 +11,23 @@
     <script src="https://kit.fontawesome.com/8a1c97083b.js" crossorigin="anonymous"></script>
 
     <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
+
     <script>
-        function verificar(){
+        function verificar() {
             let username = form.username;
             let password = form.password;
 
             if (username.value == "") {
-                swal("Ocorreu um erro","Campo de usuário não preenchido","error");
+                swal("Ocorreu um erro", "Campo de usuário não preenchido", "error");
             } else if (password.value == "") {
-                swal("Ocorreu um erro","Campo senha não preenchido","error");
+                swal("Ocorreu um erro", "Campo senha não preenchido", "error");
             } else {
-                swal("Perfeito","Seja bem vindo!","success");
+                swal("Perfeito", "Seja bem vindo!", "success");
             }
         }
     </script>
@@ -50,7 +51,7 @@
                 <div class="underline"></div>
             </div>
 
-            <input type="button" value="Acessar" onclick= 'verificar()'>
+            <input type="button" value="Acessar" onclick='verificar()'>
 
         </form>
 
